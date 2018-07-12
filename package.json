@@ -1,0 +1,31 @@
+{
+    "name": "bootstrap-v4-snippets",
+    "displayName": "Bootstrap v4 Snippets",
+    "description": "Bootstrap v4 Snippets for VS Code",
+    "version": "0.1",
+    "publisher": "Zaczero",
+	"icon": "./images/icon.png",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/Microsoft/vscode-wordcount/issues",
+        "email": "kamil.monicz@outlook.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Microsoft/vscode-wordcount.git"
+    },
+    "homepage": "https://github.com/Microsoft/vscode-wordcount/blob/master/README.md"
+}
