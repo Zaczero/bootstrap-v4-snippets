@@ -20,12 +20,12 @@
         ]
     },
     "bugs": {
-        "url": "https://github.com/Microsoft/vscode-wordcount/issues",
+        "url": "https://github.com/Zaczero/bootstrap-v4-snippets/issues",
         "email": "kamil.monicz@outlook.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/vscode-wordcount.git"
+        "url": "https://github.com/Zaczero/bootstrap-v4-snippets.git"
     },
-    "homepage": "https://github.com/Microsoft/vscode-wordcount/blob/master/README.md"
+    "homepage": "https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/README.md"
 }

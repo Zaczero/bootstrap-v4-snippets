@@ -1,65 +1,31 @@
-# bootstrap-v4-snippets README
+# Bootstrap v4 Snippets for VS Code
 
-This is the README for your extension "bootstrap-v4-snippets". After writing up a brief description, we recommend including the following sections.
+A pack of **101** code snippets for Bootstrap toolkit.  
+Latest supported version: *v4.1.2*
 
-## Features
+[Get Bootstrap here](https://getbootstrap.com/)  
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Getting started
 
-For example if there is an image subfolder under your extension project workspace:
+To start using the snippets simply type **b-** *snippet_name*.
 
-\!\[feature X\]\(images/feature-x.png\)
+* To preview the selected snippet click CTRL+SPACEBAR.  
+* To use the selected snippet simply click TAB.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+[Browse all snippets](https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/snippets/snippets.json)
 
-## Requirements
+## Preview
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+![preview1.gif](./images/preview1.gif)
 
-## Extension Settings
+## Links
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+* [Issues](https://github.com/Zaczero/bootstrap-v4-snippets/issues)
+* [Changelog](https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/CHANGELOG.md)
 
-For example:
+## Contact
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* Email: [kamil.monicz@outlook.com](mailto:kamil.monicz@outlook.com)
+* Skype: [mrzaczer0](skype:mrzaczer0?add)
+* Discord: [Zaczero#5172](https://discordapp.com/users/216292528536813570)
