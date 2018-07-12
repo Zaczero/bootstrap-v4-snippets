@@ -17,7 +17,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 ## Preview
 
-![preview1.gif](./images/preview1.gif)
+![preview1.gif](https://i.imgur.com/gbRrW2r.gif)
 
 ## Links
 
