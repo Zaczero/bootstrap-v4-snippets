@@ -410,6 +410,19 @@
 			"</div>"
 		]
 	},
+	"b-card-img-full": {
+		"prefix": "b-card-img-full",
+		"body": [
+			"<div class=\"card\">",
+			"\t<img class=\"card-img-top\" src=\"$3\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"\t<img class=\"card-img-bottom\" src=\"$4\">",
+			"</div>"
+		]
+	},
 	"b-card-img-overlay": {
 		"prefix": "b-card-img-overlay",
 		"body": [

@@ -1,6 +1,6 @@
 # Bootstrap v4 Snippets for VS Code
 
-A pack of **101** code snippets for Bootstrap toolkit.  
+A pack of **102** code snippets for Bootstrap toolkit.  
 Latest supported version: *v4.1.2*
 
 [Get Bootstrap here](https://getbootstrap.com/)  
