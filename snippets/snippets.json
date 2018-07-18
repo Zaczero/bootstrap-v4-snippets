@@ -465,7 +465,11 @@
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$2\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
 			"</div>"
@@ -477,7 +481,11 @@
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$2\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
 			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
@@ -489,8 +497,8 @@
 			"</div>"
 		]
 	},
-	"b-carousel-controls-indicators": {
-		"prefix": "b-carousel-controls-indicators",
+	"b-carousel-indicators": {
+		"prefix": "b-carousel-indicators",
 		"body": [
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<ol class=\"carousel-indicators\">",
@@ -498,15 +506,13 @@
 			"\t</ol>",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$2\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
-			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
-			"\t\t<span class=\"carousel-control-prev-icon\"></span>",
-			"\t</a>",
-			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\">",
-			"\t\t<span class=\"carousel-control-next-icon\"></span>",
-			"\t</a>",
 			"</div>"
 		]
 	},
@@ -578,7 +584,7 @@
 	"b-dropdown-split": {
 		"prefix": "b-dropdown-split",
 		"body": [
-			"<div class=\"${1|dropdown,dropup,dropright,dropleft|}\">",
+			"<div class=\"btn-group ${1|dropdown,dropup,dropright,dropleft|}\">",
 			"\t<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\">${3:Text}</button>",
 			"\t<button class=\"btn btn-$2 dropdown-toggle dropdown-toggle-split\" data-toggle=\"dropdown\"></button>",
 			"\t<div class=\"dropdown-menu\">",
@@ -590,7 +596,7 @@
 	"b-dropdown-split:a": {
 		"prefix": "b-dropdown-split:a",
 		"body": [
-			"<div class=\"${1|dropdown,dropup,dropright,dropleft|}\">",
+			"<div class=\"btn-group ${1|dropdown,dropup,dropright,dropleft|}\">",
 			"\t<a class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\" href=\"#\">${3:Text}</a>",
 			"\t<a class=\"btn btn-$2 dropdown-toggle dropdown-toggle-split\" href=\"#\" data-toggle=\"dropdown\"></a>",
 			"\t<div class=\"dropdown-menu\">",
@@ -1024,25 +1030,25 @@
 	"b-popover": {
 		"prefix": "b-popover",
 		"body": [
-			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-content=\"${5:Content}\">${4:Text}</button>"
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" data-content=\"${5:Content}\">${4:Text}</button>"
 		]
 	},
 	"b-popover:a": {
 		"prefix": "b-popover:a",
 		"body": [
-			"<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" href=\"#\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-content=\"${5:Content}\">${4:Text}</a>"
+			"<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" href=\"#\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" data-content=\"${5:Content}\">${4:Text}</a>"
 		]
 	},
 	"b-popover-title": {
 		"prefix": "b-popover-title",
 		"body": [
-			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</button>"
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</button>"
 		]
 	},
 	"b-popover-title:a": {
 		"prefix": "b-popover-title:a",
 		"body": [
-			"<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" href=\"#\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</a>"
+			"<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" href=\"#\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</a>"
 		]
 	},
 	"b-progress": {
