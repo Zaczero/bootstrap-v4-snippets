@@ -2,7 +2,7 @@
     "name": "bootstrap-v4-snippets",
     "displayName": "Bootstrap v4 Snippets",
     "description": "Bootstrap v4 Snippets for VS Code",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "Zaczero",
 	"icon": "images/icon.png",
     "engines": {
