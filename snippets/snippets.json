@@ -635,6 +635,12 @@
 			"<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\">"
 		]
 	},
+	"b-form-hidden": {
+		"prefix": "b-form-hidden",
+		"body": [
+			"<input id=\"$1\" type=\"hidden\" value=\"$2\">"
+		]
+	},
 	"b-form-group": {
 		"prefix": "b-form-group",
 		"body": [
@@ -662,6 +668,24 @@
 			"</div>"
 		]
 	},
+	"b-form-custom-check": {
+		"prefix": "b-form-custom-check",
+		"body": [
+			"<div class=\"custom-control custom-${2|checkbox,radio|}\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-custom-check-inline": {
+		"prefix": "b-form-custom-check-inline",
+		"body": [
+			"<div class=\"custom-control custom-${2|checkbox,radio|} custom-control-inline\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
 	"b-form-select": {
 		"prefix": "b-form-select",
 		"body": [
@@ -679,6 +703,28 @@
 			"<div class=\"form-group\">",
 			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
 			"\t<select id=\"$1\" class=\"form-control\" multiple>",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-custom-select": {
+		"prefix": "b-form-custom-select",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\">",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-custom-select-multiple": {
+		"prefix": "b-form-custom-select-multiple",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\" multiple>",
 			"\t\t<option>${3:Text}</option>$0",
 			"\t</select>",
 			"</div>"
@@ -702,12 +748,30 @@
 			"</div>"
 		]
 	},
+	"b-form-custom-file": {
+		"prefix": "b-form-custom-file",
+		"body": [
+			"<div class=\"custom-file\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-file-input\" type=\"file\">",
+			"\t<label for=\"$1\" class=\"custom-file-label\">${2:Text}</label>",
+			"</div>"
+		]
+	},
 	"b-form-range": {
 		"prefix": "b-form-range",
 		"body": [
 			"<div class=\"form-group\">",
 			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
 			"\t<input id=\"$1\" class=\"form-control-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
+			"</div>"
+		]
+	},
+	"b-form-custom-range": {
+		"prefix": "b-form-custom-range",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
+			"\t<input id=\"$1\" class=\"custom-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
 			"</div>"
 		]
 	},
