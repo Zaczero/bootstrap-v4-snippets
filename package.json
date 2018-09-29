@@ -16,6 +16,10 @@
             {
                 "language": "html",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "razor",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
