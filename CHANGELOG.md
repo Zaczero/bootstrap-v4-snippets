@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [0.1.4] - 2018-09-29
+- Added *.cshtml (razor)* support (Thanks to @BrightSoul)
+
 ## [0.1.3] - 2018-09-08
 - Added *b-form-hidden* snippet
 - Added *b-form-custom-* snippets set (checkbox, radio, select, range, file browser)
