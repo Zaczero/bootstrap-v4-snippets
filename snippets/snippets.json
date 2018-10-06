@@ -1070,11 +1070,11 @@
 			"\t\t<span class=\"navbar-toggler-icon\"></span>",
 			"\t</button>",
 			"\t<div id=\"$3\" class=\"collapse navbar-collapse\">",
-			"\t<ul class=\"navbar-nav mr-auto\">",
-			"\t\t<li class=\"nav-item active\">",
-			"\t\t\t<a class=\"nav-link\" href=\"#\">${5:Text}</a>",
-			"\t\t</li>$0",
-			"\t</ul>",
+			"\t\t<ul class=\"navbar-nav mr-auto\">",
+			"\t\t\t<li class=\"nav-item active\">",
+			"\t\t\t\t<a class=\"nav-link\" href=\"#\">${5:Text}</a>",
+			"\t\t\t</li>$0",
+			"\t\t</ul>",
 			"\t</div>",
 			"</nav>"
 		]
