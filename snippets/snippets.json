@@ -1074,7 +1074,7 @@
 			"\t\t<li class=\"nav-item active\">",
 			"\t\t\t<a class=\"nav-link\" href=\"#\">${5:Text}</a>",
 			"\t\t</li>$0",
-			"\t</nav>",
+			"\t</ul>",
 			"\t</div>",
 			"</nav>"
 		]
