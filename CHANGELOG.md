@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [0.1.5] - 2018-10-08
+- Fixed alignment in *b-navbar*
+- Fixed invalid closing tag in *b-navbar* (Thanks to @lokesh-coder)
+
 ## [0.1.4] - 2018-09-29
 - Added *.cshtml (razor)* support (Thanks to @BrightSoul)
 

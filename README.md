@@ -27,5 +27,3 @@ To start using the snippets simply type **b-** *snippet_name*.
 ## Contact
 
 * Email: [kamil.monicz@outlook.com](mailto:kamil.monicz@outlook.com)
-* Skype: [mrzaczer0](skype:mrzaczer0?add)
-* Discord: [Zaczero#5172](https://discordapp.com/users/216292528536813570)
