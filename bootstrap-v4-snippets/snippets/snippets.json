@@ -1,0 +1,1105 @@
+{
+	"b-alert-header": {
+		"prefix": "b-alert-header",
+		"body": [
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\">",
+			"\t<h4 class=\"alert-heading\">${2:Header}</h4>",
+			"\t${3:Content}",
+			"</div>"
+		]
+	},
+	"b-alert": {
+		"prefix": "b-alert",
+		"body": [
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\">",
+			"\t${2:Content}",
+			"</div>"
+		]
+	},
+	"b-badge-pill": {
+		"prefix": "b-badge-pill",
+		"body": [
+			"<span class=\"badge badge-pill badge-${1|primary,secondary,success,danger,warning,info,light,dark|}\">${2:Text}</span>"
+		]
+	},
+	"b-badge": {
+		"prefix": "b-badge",
+		"body": [
+			"<span class=\"badge badge-${1|primary,secondary,success,danger,warning,info,light,dark|}\">${2:Text}</span>"
+		]
+	},
+	"b-breadcrumb": {
+		"prefix": "b-breadcrumb",
+		"body": [
+			"<nav>",
+			"\t<ol class=\"breadcrumb\">",
+			"\t\t<li class=\"breadcrumb-item active\">${1:Text}</li>$0",
+			"\t</ol>",
+			"</nav>"
+		]
+	},
+	"b-btn-group-vertical": {
+		"prefix": "b-btn-group-vertical",
+		"body": [
+			"<div class=\"btn-group-vertical\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-btn-group": {
+		"prefix": "b-btn-group",
+		"body": [
+			"<div class=\"btn-group\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-btn-checkbox": {
+		"prefix": "b-btn-checkbox",
+		"body": [
+			"<div class=\"btn-group-toggle\" data-toggle=\"buttons\">",
+			"\t<label class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\">",
+			"\t\t<input type=\"checkbox\"> ${2:Text}",
+			"\t</label>",
+			"</div>"
+		]
+	},
+	"b-btn-radio": {
+		"prefix": "b-btn-radio",
+		"body": [
+			"<div class=\"btn-group btn-group-toggle\" data-toggle=\"buttons\">",
+			"\t<label class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\">",
+			"\t\t<input type=\"radio\"> ${2:Text}",
+			"\t</label>$0",
+			"</div>"
+		]
+	},
+	"b-btn": {
+		"prefix": "b-btn",
+		"body": [
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\">${3:Text}</button>"
+		]
+	},
+	"b-card-columns": {
+		"prefix": "b-card-columns",
+		"body": [
+			"<div class=\"card-columns\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-card-deck": {
+		"prefix": "b-card-deck",
+		"body": [
+			"<div class=\"card-deck\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-card-footer": {
+		"prefix": "b-card-footer",
+		"body": [
+			"<div class=\"card\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"\t<div class=\"card-footer\">",
+			"\t\t${3:Footer}",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-card-full": {
+		"prefix": "b-card-full",
+		"body": [
+			"<div class=\"card\">",
+			"\t<div class=\"card-header\">",
+			"\t\t${1:Header}",
+			"\t</div>",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${2:Title}</h5>",
+			"\t\t<p class=\"card-text\">${3:Content}</p>$0",
+			"\t</div>",
+			"\t<div class=\"card-footer\">",
+			"\t\t${4:Footer}",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-card-group": {
+		"prefix": "b-card-group",
+		"body": [
+			"<div class=\"card-group\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-card-header": {
+		"prefix": "b-card-header",
+		"body": [
+			"<div class=\"card\">",
+			"\t<div class=\"card-header\">",
+			"\t\t${1:Header}",
+			"\t</div>",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${2:Title}</h5>",
+			"\t\t<p class=\"card-text\">${3:Content}</p>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-card-img-bottom": {
+		"prefix": "b-card-img-bottom",
+		"body": [
+			"<div class=\"card\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"\t<img class=\"card-img-bottom\" src=\"$3\">",
+			"</div>"
+		]
+	},
+	"b-card-img-full": {
+		"prefix": "b-card-img-full",
+		"body": [
+			"<div class=\"card\">",
+			"\t<img class=\"card-img-top\" src=\"$3\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"\t<img class=\"card-img-bottom\" src=\"$4\">",
+			"</div>"
+		]
+	},
+	"b-card-img-overlay": {
+		"prefix": "b-card-img-overlay",
+		"body": [
+			"<div class=\"card\">",
+			"\t<img class=\"card-img\" src=\"$3\">",
+			"\t<div class=\"card-img-overlay\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-card-img-top": {
+		"prefix": "b-card-img-top",
+		"body": [
+			"<div class=\"card\">",
+			"\t<img class=\"card-img-top\" src=\"$3\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-card": {
+		"prefix": "b-card",
+		"body": [
+			"<div class=\"card\">",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
+			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-carousel-controls": {
+		"prefix": "b-carousel-controls",
+		"body": [
+			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
+			"\t<div class=\"carousel-inner\">",
+			"\t\t<div class=\"carousel-item active\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>$0",
+			"\t</div>",
+			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
+			"\t\t<span class=\"carousel-control-prev-icon\"></span>",
+			"\t</a>",
+			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\">",
+			"\t\t<span class=\"carousel-control-next-icon\"></span>",
+			"\t</a>",
+			"</div>"
+		]
+	},
+	"b-carousel-full": {
+		"prefix": "b-carousel-full",
+		"body": [
+			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
+			"\t<ol class=\"carousel-indicators\">",
+			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\"></li>",
+			"\t</ol>",
+			"\t<div class=\"carousel-inner\">",
+			"\t\t<div class=\"carousel-item active\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>$0",
+			"\t</div>",
+			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
+			"\t\t<span class=\"carousel-control-prev-icon\"></span>",
+			"\t</a>",
+			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\">",
+			"\t\t<span class=\"carousel-control-next-icon\"></span>",
+			"\t</a>",
+			"</div>"
+		]
+	},
+	"b-carousel-indicators": {
+		"prefix": "b-carousel-indicators",
+		"body": [
+			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
+			"\t<ol class=\"carousel-indicators\">",
+			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\"></li>",
+			"\t</ol>",
+			"\t<div class=\"carousel-inner\">",
+			"\t\t<div class=\"carousel-item active\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-carousel": {
+		"prefix": "b-carousel",
+		"body": [
+			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
+			"\t<div class=\"carousel-inner\">",
+			"\t\t<div class=\"carousel-item active\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${2:Title}</h5>",
+			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-collapse": {
+		"prefix": "b-collapse",
+		"body": [
+			"<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\" data-target=\"#${1:my-collapse}\" data-toggle=\"collapse\">${3:Text}</button>",
+			"<div id=\"$1\" class=\"collapse\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-dropdown-menu": {
+		"prefix": "b-dropdown-menu",
+		"body": [
+			"<div class=\"dropdown-menu\">",
+			"\t<a class=\"dropdown-item active\" href=\"#\">${1:Text}</a>$0",
+			"</div>"
+		]
+	},
+	"b-dropdown-split": {
+		"prefix": "b-dropdown-split",
+		"body": [
+			"<div class=\"btn-group ${1|dropdown,dropup,dropright,dropleft|}\">",
+			"\t<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\">${3:Text}</button>",
+			"\t<button class=\"btn btn-$2 dropdown-toggle dropdown-toggle-split\" data-toggle=\"dropdown\"></button>",
+			"\t<div class=\"dropdown-menu\">",
+			"\t\t<a class=\"dropdown-item active\" href=\"#\">${4:Text}</a>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-dropdown": {
+		"prefix": "b-dropdown",
+		"body": [
+			"<div class=\"${1|dropdown,dropup,dropright,dropleft|}\">",
+			"\t<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|} dropdown-toggle\" data-toggle=\"dropdown\">${3:Text}</button>",
+			"\t<div class=\"dropdown-menu\">",
+			"\t\t<a class=\"dropdown-item active\" href=\"#\">${4:Text}</a>$0",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-form-check-inline": {
+		"prefix": "b-form-check-inline",
+		"body": [
+			"<div class=\"form-check form-check-inline\">",
+			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"form-check-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-check": {
+		"prefix": "b-form-check",
+		"body": [
+			"<div class=\"form-check\">",
+			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"form-check-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-custom-check-inline": {
+		"prefix": "b-form-custom-check-inline",
+		"body": [
+			"<div class=\"custom-control custom-${2|checkbox,radio|} custom-control-inline\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-custom-check": {
+		"prefix": "b-form-custom-check",
+		"body": [
+			"<div class=\"custom-control custom-${2|checkbox,radio|}\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-custom-file": {
+		"prefix": "b-form-custom-file",
+		"body": [
+			"<div class=\"custom-file\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-file-input\" type=\"file\">",
+			"\t<label for=\"$1\" class=\"custom-file-label\">${2:Text}</label>",
+			"</div>"
+		]
+	},
+	"b-form-custom-range": {
+		"prefix": "b-form-custom-range",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
+			"\t<input id=\"$1\" class=\"custom-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
+			"</div>"
+		]
+	},
+	"b-form-custom-select-multiple": {
+		"prefix": "b-form-custom-select-multiple",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\" multiple>",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-custom-select": {
+		"prefix": "b-form-custom-select",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\">",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-file": {
+		"prefix": "b-form-file",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control-file\" type=\"file\">",
+			"</div>"
+		]
+	},
+	"b-form-group": {
+		"prefix": "b-form-group",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${3:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\">",
+			"</div>"
+		]
+	},
+	"b-form-help": {
+		"prefix": "b-form-help",
+		"body": [
+			"<small class=\"form-text text-muted\">${1:Content}</small>"
+		]
+	},
+	"b-form-inline": {
+		"prefix": "b-form-inline",
+		"body": [
+			"<form class=\"form-inline\" method=\"${1|get,post|}\" action=\"$2\">",
+			"\t$0",
+			"</form>"
+		]
+	},
+	"b-form-invalid": {
+		"prefix": "b-form-invalid",
+		"body": [
+			"<div class=\"invalid-${1|feedback,tooltip|\">${2:Content}</div>"
+		]
+	},
+	"b-form-range": {
+		"prefix": "b-form-range",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
+			"</div>"
+		]
+	},
+	"b-form-select-multiple": {
+		"prefix": "b-form-select-multiple",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"form-control\" multiple>",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-select": {
+		"prefix": "b-form-select",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
+			"\t<select id=\"$1\" class=\"form-control\">",
+			"\t\t<option>${3:Text}</option>$0",
+			"\t</select>",
+			"</div>"
+		]
+	},
+	"b-form-textarea": {
+		"prefix": "b-form-textarea",
+		"body": [
+			"<div class=\"form-group\">",
+			"\t<label for=\"${1:my-input}\">${3:Text}</label>",
+			"\t<textarea id=\"$1\" class=\"form-control\" rows=\"${2:3}\"></textarea>",
+			"</div>"
+		]
+	},
+	"b-form-valid": {
+		"prefix": "b-form-valid",
+		"body": [
+			"<div class=\"valid-${1|feedback,tooltip|}\">${2:Content}</div>"
+		]
+	},
+	"b-form": {
+		"prefix": "b-form",
+		"body": [
+			"<form method=\"${1|get,post|}\" action=\"$2\">",
+			"\t$0",
+			"</form>"
+		]
+	},
+	"b-input-hidden": {
+		"prefix": "b-input-hidden",
+		"body": [
+			"<input id=\"$1\" type=\"hidden\" value=\"$2\">"
+		]
+	},
+	"b-input": {
+		"prefix": "b-input",
+		"body": [
+			"<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\">"
+		]
+	},
+	"b-input-group-append": {
+		"prefix": "b-input-group-append",
+		"body": [
+			"<div class=\"input-group\">",
+			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
+			"\t<div class=\"input-group-append\">",
+			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-input-group-full": {
+		"prefix": "b-input-group-full",
+		"body": [
+			"<div class=\"input-group\">",
+			"\t<div class=\"input-group-prepend\">",
+			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
+			"\t</div>",
+			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
+			"\t<div class=\"input-group-append\">",
+			"\t\t<span class=\"input-group-text\">${3:Text}</span>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-input-group-prepend": {
+		"prefix": "b-input-group-prepend",
+		"body": [
+			"<div class=\"input-group\">",
+			"\t<div class=\"input-group-prepend\">",
+			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
+			"\t</div>",
+			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
+			"</div>"
+		]
+	},
+	"b-jumbotron-fluid": {
+		"prefix": "b-jumbotron-fluid",
+		"body": [
+			"<div class=\"jumbotron jumbotron-fluid\">",
+			"\t<h1 class=\"display-4\">${1:Title}</h1>",
+			"\t<p class=\"lead\">${2:Subtitle}</p>",
+			"\t<hr class=\"my-4\">",
+			"\t<p>${3:Content}</p>",
+			"</div>"
+		]
+	},
+	"b-jumbotron": {
+		"prefix": "b-jumbotron",
+		"body": [
+			"<div class=\"jumbotron\">",
+			"\t<h1 class=\"display-4\">${1:Title}</h1>",
+			"\t<p class=\"lead\">${2:Subtitle}</p>",
+			"\t<hr class=\"my-4\">",
+			"\t<p>${3:Content}</p>",
+			"</div>"
+		]
+	},
+	"b-list-group-action-flush": {
+		"prefix": "b-list-group-action-flush",
+		"body": [
+			"<ul class=\"list-group list-group-flush\">",
+			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>$0",
+			"</ul>"
+		]
+	},
+	"b-list-group-action": {
+		"prefix": "b-list-group-action",
+		"body": [
+			"<ul class=\"list-group\">",
+			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>$0",
+			"</ul>"
+		]
+	},
+	"b-list-group-flush": {
+		"prefix": "b-list-group-flush",
+		"body": [
+			"<ul class=\"list-group list-group-flush\">",
+			"\t<li class=\"list-group-item active\">${1:Text}</li>$0",
+			"</ul>"
+		]
+	},
+	"b-list-group": {
+		"prefix": "b-list-group",
+		"body": [
+			"<ul class=\"list-group\">",
+			"\t<li class=\"list-group-item active\">${1:Text}</li>$0",
+			"</ul>"
+		]
+	},
+	"b-media-left": {
+		"prefix": "b-media-left",
+		"body": [
+			"<div class=\"media\">",
+			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$4\">",
+			"\t<div class=\"media-body\">",
+			"\t\t<h5 class=\"mb-0\">${2:Header}</h5>",
+			"\t\t${3:Content}",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-media-right": {
+		"prefix": "b-media-right",
+		"body": [
+			"<div class=\"media\">",
+			"\t<div class=\"media-body\">",
+			"\t\t<h5 class=\"mb-0\">${2:Header}</h5>",
+			"\t\t${3:Content}",
+			"\t</div>",
+			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$4\">",
+			"</div>"
+		]
+	},
+	"b-modal-center": {
+		"prefix": "b-modal-center",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${1:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-footer-center": {
+		"prefix": "b-modal-footer-center",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${1:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-footer\">",
+			"\t\t\t\t${2:Footer}",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-footer": {
+		"prefix": "b-modal-footer",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${1:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-footer\">",
+			"\t\t\t\t${2:Footer}",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-full-center": {
+		"prefix": "b-modal-full-center",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-header\">",
+			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
+			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t</button>",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-footer\">",
+			"\t\t\t\t${3:Footer}",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-full": {
+		"prefix": "b-modal-full",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-header\">",
+			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
+			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t</button>",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-footer\">",
+			"\t\t\t\t${3:Footer}",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-header-center": {
+		"prefix": "b-modal-header-center",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-header\">",
+			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
+			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t</button>",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal-header": {
+		"prefix": "b-modal-header",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-header\">",
+			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
+			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t</button>",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-modal": {
+		"prefix": "b-modal",
+		"body": [
+			"<div class=\"modal fade\">",
+			"\t<div class=\"modal-dialog\">",
+			"\t\t<div class=\"modal-content\">",
+			"\t\t\t<div class=\"modal-body\">",
+			"\t\t\t\t<p>${1:Content}</p>$0",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-navbar": {
+		"prefix": "b-navbar",
+		"body": [
+			"<nav class=\"navbar navbar-expand-lg navbar-${1|light,dark|} bg-$1 ${2|fixed-top,fixed-bottom,sticky-top|}\">",
+			"\t<a class=\"navbar-brand\">${4:Brand}</a>",
+			"\t<button class=\"navbar-toggler\" data-target=\"#${3:my-nav}\" data-toggle=\"collapse\">",
+			"\t\t<span class=\"navbar-toggler-icon\"></span>",
+			"\t</button>",
+			"\t<div id=\"$3\" class=\"collapse navbar-collapse\">",
+			"\t\t<ul class=\"navbar-nav mr-auto\">",
+			"\t\t\t<li class=\"nav-item active\">",
+			"\t\t\t\t<a class=\"nav-link\" href=\"#\">${5:Text}</a>",
+			"\t\t\t</li>$0",
+			"\t\t</ul>",
+			"\t</div>",
+			"</nav>"
+		]
+	},
+	"b-nav-fill": {
+		"prefix": "b-nav-fill",
+		"body": [
+			"<nav class=\"nav nav-fill\">",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t</li>$0",
+			"</nav>"
+		]
+	},
+	"b-nav-vertical": {
+		"prefix": "b-nav-vertical",
+		"body": [
+			"<nav class=\"nav flex-column\">",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t</li>$0",
+			"</nav>"
+		]
+	},
+	"b-nav": {
+		"prefix": "b-nav",
+		"body": [
+			"<nav class=\"nav\">",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t</li>$0",
+			"</nav>"
+		]
+	},
+	"b-pagination": {
+		"prefix": "b-pagination",
+		"body": [
+			"<nav>",
+			"\t<ul class=\"pagination\">",
+			"\t\t<li class=\"page-item\">",
+			"\t\t\t<a class=\"page-link\" href=\"#\">${1:Page 1}</a>",
+			"\t\t</li>$0",
+			"\t</ul>",
+			"</nav>"
+		]
+	},
+	"b-popover-title": {
+		"prefix": "b-popover-title",
+		"body": [
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</button>"
+		]
+	},
+	"b-popover": {
+		"prefix": "b-popover",
+		"body": [
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" data-content=\"${5:Content}\">${4:Text}</button>"
+		]
+	},
+	"b-progress-striped": {
+		"prefix": "b-progress-striped",
+		"body": [
+			"<div class=\"progress\">",
+			"\t<div class=\"progress-bar progress-bar-striped bg-primary\" style=\"width: ${1:25}%\">${2:Text}</div>",
+			"</div>"
+		]
+	},
+	"b-progress": {
+		"prefix": "b-progress",
+		"body": [
+			"<div class=\"progress\">",
+			"\t<div class=\"progress-bar bg-primary\" style=\"width: ${1:25}%\">${2:Text}</div>",
+			"</div>"
+		]
+	},
+	"b-figure": {
+		"prefix": "b-figure",
+		"body": [
+			"<figure class=\"figure\">",
+			"\t<img class=\"figure-img img-fluid\" src=\"$2\">",
+			"\t<figcaption class=\"figure-caption\">${1:Content}</figcaption>",
+			"</figure>"
+		]
+	},
+	"b-img-fluid": {
+		"prefix": "b-img-fluid",
+		"body": [
+			"<img class=\"img-fluid\" src=\"$1\">"
+		]
+	},
+	"b-img-thumbnail": {
+		"prefix": "b-img-thumbnail",
+		"body": [
+			"<img class=\"img-thumbnail\" src=\"$1\">"
+		]
+	},
+	"b-col": {
+		"prefix": "b-col",
+		"body": [
+			"<div class=\"col\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-row": {
+		"prefix": "b-row",
+		"body": [
+			"<div class=\"row\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-container-fluid": {
+		"prefix": "b-container-fluid",
+		"body": [
+			"<div class=\"container-fluid\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-container": {
+		"prefix": "b-container",
+		"body": [
+			"<div class=\"container\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-table-footer": {
+		"prefix": "b-table-footer",
+		"body": [
+			"<table class=\"table table-${1|light,dark|}\">",
+			"\t<tbody>",
+			"\t\t<tr>",
+			"\t\t\t<td>$2</td>",
+			"\t\t</tr>$0",
+			"\t</tbody>",
+			"\t<tfoot>",
+			"\t\t<tr>",
+			"\t\t\t<th>#</th>",
+			"\t\t</tr>",
+			"\t</tfoot>",
+			"</table>"
+		]
+	},
+	"b-table-full": {
+		"prefix": "b-table-full",
+		"body": [
+			"<table class=\"table table-${1|light,dark|}\">",
+			"\t<thead class=\"thead-${2|light,dark|}\">",
+			"\t\t<tr>",
+			"\t\t\t<th>#</th>",
+			"\t\t</tr>",
+			"\t</thead>",
+			"\t<tbody>",
+			"\t\t<tr>",
+			"\t\t\t<td>$3</td>",
+			"\t\t</tr>$0",
+			"\t</tbody>",
+			"\t<tfoot>",
+			"\t\t<tr>",
+			"\t\t\t<th>#</th>",
+			"\t\t</tr>",
+			"\t</tfoot>",
+			"</table>"
+		]
+	},
+	"b-table-header": {
+		"prefix": "b-table-header",
+		"body": [
+			"<table class=\"table table-${1|light,dark|}\">",
+			"\t<thead class=\"thead-${2|light,dark|}\">",
+			"\t\t<tr>",
+			"\t\t\t<th>#</th>",
+			"\t\t</tr>",
+			"\t</thead>",
+			"\t<tbody>",
+			"\t\t<tr>",
+			"\t\t\t<td>$3</td>",
+			"\t\t</tr>$0",
+			"\t</tbody>",
+			"</table>"
+		]
+	},
+	"b-table": {
+		"prefix": "b-table",
+		"body": [
+			"<table class=\"table table-${1|light,dark|}\">",
+			"\t<tbody>",
+			"\t\t<tr>",
+			"\t\t\t<td>$2</td>",
+			"\t\t</tr>$0",
+			"\t</tbody>",
+			"</table>"
+		]
+	},
+	"b-abbr-initialism": {
+		"prefix": "b-abbr-initialism",
+		"body": [
+			"<abbr class=\"initialism\" title=\"${1:Title}\">${2:Text}</abbr>"
+		]
+	},
+	"b-abbr": {
+		"prefix": "b-abbr",
+		"body": [
+			"<abbr title=\"${1:Title}\">${2:Text}</abbr>"
+		]
+	},
+	"b-blockquote-footer": {
+		"prefix": "b-blockquote-footer",
+		"body": [
+			"<blockquote class=\"blockquote\">",
+			"\t<p class=\"mb-0\">${1:Text}</p>",
+			"\t<footer class=\"blockquote-footer\">${2:Footer}</footer>",
+			"</blockquote>"
+		]
+	},
+	"b-blockquote": {
+		"prefix": "b-blockquote",
+		"body": [
+			"<blockquote class=\"blockquote\">",
+			"\t<p class=\"mb-0\">${1:Text}</p>",
+			"</blockquote>"
+		]
+	},
+	"b-display": {
+		"prefix": "b-display",
+		"body": [
+			"<h1 class=\"display-${1|1,2,3,4|}\">${2:Text}</h1>"
+		]
+	},
+	"b-list-inline": {
+		"prefix": "b-list-inline",
+		"body": [
+			"<ul class=\"list-inline\">",
+			"\t<li class=\"list-inline-item\">${1:Text}</li>$0",
+			"</ul>"
+		]
+	},
+	"b-list-unstyled": {
+		"prefix": "b-list-unstyled",
+		"body": [
+			"<ul class=\"list-unstyled\">",
+			"\t<li>${1:Text}</li>$0",
+			"</ul>"
+		]
+	},
+	"b-clearfix": {
+		"prefix": "b-clearfix",
+		"body": [
+			"<div class=\"clearfix\">",
+			"\t<div class=\"float-left\">",
+			"\t\t$0",
+			"\t</div>",
+			"\t<div class=\"float-right\">",
+			"\t\t",
+			"\t</div>",
+			"</div>"
+		]
+	},
+	"b-embed-responsive": {
+		"prefix": "b-embed-responsive",
+		"body": [
+			"<div class=\"embed-responsive embed-responsive-${1|16by9,21by9,4by3,1by1|}\">",
+			"\t<iframe class=\"embed-responsive-item\" src=\"$2\"></iframe>",
+			"</div>"
+		]
+	},
+	"b-flex-column-reverse": {
+		"prefix": "b-flex-column-reverse",
+		"body": [
+			"<div class=\"d-flex flex-column-reverse\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-flex-column": {
+		"prefix": "b-flex-column",
+		"body": [
+			"<div class=\"d-flex flex-column\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-flex-row-reverse": {
+		"prefix": "b-flex-row-reverse",
+		"body": [
+			"<div class=\"d-flex flex-row-reverse\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-flex-row": {
+		"prefix": "b-flex-row",
+		"body": [
+			"<div class=\"d-flex flex-row\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-float-left": {
+		"prefix": "b-float-left",
+		"body": [
+			"<div class=\"float-left\">",
+			"\t$0",
+			"</div>"
+		]
+	},
+	"b-float-right": {
+		"prefix": "b-float-right",
+		"body": [
+			"<div class=\"float-right\">",
+			"\t$0",
+			"</div>"
+		]
+	}
+}

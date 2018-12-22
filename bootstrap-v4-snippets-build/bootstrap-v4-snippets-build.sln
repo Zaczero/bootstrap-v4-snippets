@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bootstrap-v4-snippets-build", "bootstrap-v4-snippets-build\bootstrap-v4-snippets-build.csproj", "{767DBEA7-D644-44B3-B8DA-7EB46E31C167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{767DBEA7-D644-44B3-B8DA-7EB46E31C167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767DBEA7-D644-44B3-B8DA-7EB46E31C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767DBEA7-D644-44B3-B8DA-7EB46E31C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767DBEA7-D644-44B3-B8DA-7EB46E31C167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11C02D42-AD96-4DF1-BA30-A0633F1FF1A9}
+	EndGlobalSection
+EndGlobal

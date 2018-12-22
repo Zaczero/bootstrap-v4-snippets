@@ -1,0 +1,20 @@
+<div id="${1:my-carousel}" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#$1" data-slide-to="0"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="$4">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>${2:Title}</h5>
+                <p>${3:Text}</p>
+            </div>
+        </div>$0
+    </div>
+    <a class="carousel-control-prev" href="#$1" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#$1" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>

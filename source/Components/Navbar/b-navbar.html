@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-${1|light,dark|} bg-$1 ${2|fixed-top,fixed-bottom,sticky-top|}">
+    <a class="navbar-brand">${4:Brand}</a>
+    <button class="navbar-toggler" data-target="#${3:my-nav}" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="$3" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">${5:Text}</a>
+            </li>$0
+        </ul>
+    </div>
+</nav>
