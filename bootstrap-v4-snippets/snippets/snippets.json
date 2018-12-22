@@ -407,6 +407,15 @@
 			"</div>"
 		]
 	},
+	"b-form-custom-switch": {
+		"prefix": "b-form-custom-switch",
+		"body": [
+			"<div class=\"custom-control custom-switch\">",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"checkbox\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${2:Text}</label>",
+			"</div>"
+		]
+	},
 	"b-form-file": {
 		"prefix": "b-form-file",
 		"body": [
@@ -858,6 +867,36 @@
 		"body": [
 			"<div class=\"progress\">",
 			"\t<div class=\"progress-bar bg-primary\" style=\"width: ${1:25}%\">${2:Text}</div>",
+			"</div>"
+		]
+	},
+	"b-spinner-growing": {
+		"prefix": "b-spinner-growing",
+		"body": [
+			"<div class=\"spinner-grow text-${1|primary,secondary,success,danger,warning,info,light,dark|}\"></div>"
+		]
+	},
+	"b-spinner": {
+		"prefix": "b-spinner",
+		"body": [
+			"<div class=\"spinner-border text-${1|primary,secondary,success,danger,warning,info,light,dark|}\"></div>"
+		]
+	},
+	"b-toast": {
+		"prefix": "b-toast",
+		"body": [
+			"<div class=\"toast\">",
+			"\t<div class=\"toast-header\">",
+			"\t\t<img src=\"$1\" class=\"rounded mr-2\">",
+			"\t\t<strong class=\"mr-auto\">${2:Title}</strong>",
+			"\t\t<small>${3:Note}</small>",
+			"\t\t<button type=\"button\" class=\"ml-2 mb-1 close\" data-dismiss=\"toast\">",
+			"\t\t\t<span>&times;</span>",
+			"\t\t</button>",
+			"\t</div>",
+			"\t<div class=\"toast-body\">",
+			"\t\t$0",
+			"\t</div>",
 			"</div>"
 		]
 	},

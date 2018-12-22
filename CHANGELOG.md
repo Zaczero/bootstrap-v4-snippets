@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [0.1.6] - 2018-12-22
+- Added *b-toast*
+- Added *b-spinner*
+- Added *b-spinner-growing*
+- Added *b-form-custom-switch*
+- Added *b-col*
+- Added *b-float-left*
+- Added *b-float-right*
+- Renamed *b-form-input* to *b-input*
+- Renamed *b-form-hidden* to *b-input-hidden*
+- Renamed *b-abbr-small* to *b-abbr-initialism*
+
 ## [0.1.5] - 2018-10-08
 - Fixed alignment in *b-navbar*
 - Fixed invalid closing tag in *b-navbar* (Thanks to @lokesh-coder)
