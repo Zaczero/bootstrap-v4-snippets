@@ -1,12 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-${1|light,dark|} bg-$1 ${2|fixed-top,fixed-bottom,sticky-top|}">
-    <a class="navbar-brand">${4:Brand}</a>
-    <button class="navbar-toggler" data-target="#${3:my-nav}" data-toggle="collapse">
+    <a class="navbar-brand">${5:Brand}</a>
+    <button class="navbar-toggler" data-target="#${3:my-nav}" data-toggle="collapse" aria-controls="$3" aria-expanded="false" aria-label="${4:Toggle navigation}">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div id="$3" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">${5:Text}</a>
+                <a class="nav-link" href="#">${6:Item 1} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">${7:Item 2}</a>
             </li>$0
         </ul>
     </div>
