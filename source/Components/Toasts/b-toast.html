@@ -1,10 +1,10 @@
-<div class="toast">
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-        <img src="$1" class="rounded mr-2">
-        <strong class="mr-auto">${2:Title}</strong>
-        <small>${3:Note}</small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
-            <span>&times;</span>
+        <img src="$1" class="rounded mr-2" alt="${2:Toast icon alternate text}">
+        <strong class="mr-auto">${3:Title}</strong>
+        <small>${4:Note}</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="toast-body">
