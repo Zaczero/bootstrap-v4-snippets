@@ -1,6 +1,6 @@
 <div class="${1|dropdown,dropup,dropright,dropleft|}">
-    <button class="btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|} dropdown-toggle" data-toggle="dropdown">${3:Text}</button>
-    <div class="dropdown-menu">
+    <button class="btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|} dropdown-toggle" id="${5:my-dropdown-button-id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${3:Text}</button>
+    <div class="dropdown-menu" aria-labelledby="$5">
         <a class="dropdown-item active" href="#">${4:Text}</a>$0
     </div>
 </div>
