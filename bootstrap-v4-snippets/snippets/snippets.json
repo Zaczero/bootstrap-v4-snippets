@@ -2,7 +2,7 @@
 	"b-alert-header": {
 		"prefix": "b-alert-header",
 		"body": [
-			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\">",
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
 			"\t<h4 class=\"alert-heading\">${2:Header}</h4>",
 			"\t${3:Content}",
 			"</div>"
@@ -11,7 +11,7 @@
 	"b-alert": {
 		"prefix": "b-alert",
 		"body": [
-			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\">",
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
 			"\t${2:Content}",
 			"</div>"
 		]
@@ -31,9 +31,10 @@
 	"b-breadcrumb": {
 		"prefix": "b-breadcrumb",
 		"body": [
-			"<nav>",
+			"<nav aria-label=\"${1:Page breadcrumb}\">",
 			"\t<ol class=\"breadcrumb\">",
-			"\t\t<li class=\"breadcrumb-item active\">${1:Text}</li>$0",
+			"\t\t<li class=\"breadcrumb-item active\" aria-current=\"page\">${2:Item 1}</li>",
+			"\t\t<li class=\"breadcrumb-item\">${3:Item 2}</li>$0",
 			"\t</ol>",
 			"</nav>"
 		]
@@ -41,7 +42,7 @@
 	"b-btn-group-vertical": {
 		"prefix": "b-btn-group-vertical",
 		"body": [
-			"<div class=\"btn-group-vertical\">",
+			"<div class=\"btn-group-vertical\" role=\"group\" aria-label=\"${1:Vertical button group}\">",
 			"\t$0",
 			"</div>"
 		]
@@ -49,7 +50,7 @@
 	"b-btn-group": {
 		"prefix": "b-btn-group",
 		"body": [
-			"<div class=\"btn-group\">",
+			"<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Button group}\">",
 			"\t$0",
 			"</div>"
 		]
@@ -60,7 +61,7 @@
 			"<div class=\"btn-group-toggle\" data-toggle=\"buttons\">",
 			"\t<label class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\">",
 			"\t\t<input type=\"checkbox\"> ${2:Text}",
-			"\t</label>",
+			"\t</label>$0",
 			"</div>"
 		]
 	},
@@ -157,7 +158,7 @@
 			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
 			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
 			"\t</div>",
-			"\t<img class=\"card-img-bottom\" src=\"$3\">",
+			"\t<img class=\"card-img-bottom\" src=\"$3\" alt=\"$4\">",
 			"</div>"
 		]
 	},
@@ -165,12 +166,12 @@
 		"prefix": "b-card-img-full",
 		"body": [
 			"<div class=\"card\">",
-			"\t<img class=\"card-img-top\" src=\"$3\">",
+			"\t<img class=\"card-img-top\" src=\"$1\" alt=\"$2\">",
 			"\t<div class=\"card-body\">",
-			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
-			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t\t<h5 class=\"card-title\">${3:Title}</h5>",
+			"\t\t<p class=\"card-text\">${4:Content}</p>$0",
 			"\t</div>",
-			"\t<img class=\"card-img-bottom\" src=\"$4\">",
+			"\t<img class=\"card-img-bottom\" src=\"$5\" alt=\"$6\">",
 			"</div>"
 		]
 	},
@@ -178,10 +179,10 @@
 		"prefix": "b-card-img-overlay",
 		"body": [
 			"<div class=\"card\">",
-			"\t<img class=\"card-img\" src=\"$3\">",
+			"\t<img class=\"card-img\" src=\"$1\" alt=\"$2\">",
 			"\t<div class=\"card-img-overlay\">",
-			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
-			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t\t<h5 class=\"card-title\">${3:Title}</h5>",
+			"\t\t<p class=\"card-text\">${4:Content}</p>$0",
 			"\t</div>",
 			"</div>"
 		]
@@ -190,10 +191,10 @@
 		"prefix": "b-card-img-top",
 		"body": [
 			"<div class=\"card\">",
-			"\t<img class=\"card-img-top\" src=\"$3\">",
+			"\t<img class=\"card-img-top\" src=\"$1\" alt=\"$2\">",
 			"\t<div class=\"card-body\">",
-			"\t\t<h5 class=\"card-title\">${1:Title}</h5>",
-			"\t\t<p class=\"card-text\">${2:Content}</p>$0",
+			"\t\t<h5 class=\"card-title\">${3:Title}</h5>",
+			"\t\t<p class=\"card-text\">${4:Content}</p>$0",
 			"\t</div>",
 			"</div>"
 		]
@@ -215,18 +216,20 @@
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$2\" alt=\"$3\">",
 			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
-			"\t\t\t\t<h5>${2:Title}</h5>",
-			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t\t<h5>${4:Title}</h5>",
+			"\t\t\t\t<p>${5:Text}</p>",
 			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
-			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
-			"\t\t<span class=\"carousel-control-prev-icon\"></span>",
+			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\" role=\"button\">",
+			"\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+			"\t\t<span class=\"sr-only\">${6:Previous}</span>",
 			"\t</a>",
-			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\">",
-			"\t\t<span class=\"carousel-control-next-icon\"></span>",
+			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\" role=\"button\">",
+			"\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+			"\t\t<span class=\"sr-only\">${7:Next}</span>",
 			"\t</a>",
 			"</div>"
 		]
@@ -236,22 +239,32 @@
 		"body": [
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<ol class=\"carousel-indicators\">",
-			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\"></li>",
+			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\" aria-current=\"location\"></li>",
+			"\t\t<li data-target=\"#$1\" data-slide-to=\"1\"></li>",
 			"\t</ol>",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$2\" alt=\"$3\">",
 			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
-			"\t\t\t\t<h5>${2:Title}</h5>",
-			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t\t<h5>${4:Title}</h5>",
+			"\t\t\t\t<p>${5:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t\t<div class=\"carousel-item\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$6\" alt=\"$7\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${8:Title}</h5>",
+			"\t\t\t\t<p>${9:Text}</p>",
 			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
-			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\">",
-			"\t\t<span class=\"carousel-control-prev-icon\"></span>",
+			"\t<a class=\"carousel-control-prev\" href=\"#$1\" data-slide=\"prev\" role=\"button\">",
+			"\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+			"\t\t<span class=\"sr-only\">${10:Previous}</span>",
 			"\t</a>",
-			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\">",
-			"\t\t<span class=\"carousel-control-next-icon\"></span>",
+			"\t<a class=\"carousel-control-next\" href=\"#$1\" data-slide=\"next\" role=\"button\">",
+			"\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+			"\t\t<span class=\"sr-only\">${11:Next}</span>",
 			"\t</a>",
 			"</div>"
 		]
@@ -261,14 +274,22 @@
 		"body": [
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<ol class=\"carousel-indicators\">",
-			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\"></li>",
+			"\t\t<li class=\"active\" data-target=\"#$1\" data-slide-to=\"0\" aria-current=\"location\"></li>",
+			"\t\t<li data-target=\"#$1\" data-slide-to=\"1\"></li>",
 			"\t</ol>",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$2\" alt=\"$3\">",
 			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
-			"\t\t\t\t<h5>${2:Title}</h5>",
-			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t\t<h5>${4:Title}</h5>",
+			"\t\t\t\t<p>${5:Text}</p>",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t\t<div class=\"carousel-item\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$6\" alt=\"$7\">",
+			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+			"\t\t\t\t<h5>${8:Title}</h5>",
+			"\t\t\t\t<p>${9:Text}</p>",
 			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
@@ -281,10 +302,10 @@
 			"<div id=\"${1:my-carousel}\" class=\"carousel slide\" data-ride=\"carousel\">",
 			"\t<div class=\"carousel-inner\">",
 			"\t\t<div class=\"carousel-item active\">",
-			"\t\t\t<img class=\"d-block w-100\" src=\"$4\">",
+			"\t\t\t<img class=\"d-block w-100\" src=\"$2\" alt=\"$3\">",
 			"\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
-			"\t\t\t\t<h5>${2:Title}</h5>",
-			"\t\t\t\t<p>${3:Text}</p>",
+			"\t\t\t\t<h5>${4:Title}</h5>",
+			"\t\t\t\t<p>${5:Text}</p>",
 			"\t\t\t</div>",
 			"\t\t</div>$0",
 			"\t</div>",
@@ -294,7 +315,7 @@
 	"b-collapse": {
 		"prefix": "b-collapse",
 		"body": [
-			"<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\" data-target=\"#${1:my-collapse}\" data-toggle=\"collapse\">${3:Text}</button>",
+			"<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\" data-target=\"#${1:my-collapse}\" data-toggle=\"collapse\" aria-expanded=\"false\" aria-controls=\"$1\">${3:Text}</button>",
 			"<div id=\"$1\" class=\"collapse\">",
 			"\t$0",
 			"</div>"
@@ -311,11 +332,13 @@
 	"b-dropdown-split": {
 		"prefix": "b-dropdown-split",
 		"body": [
-			"<div class=\"btn-group ${1|dropdown,dropup,dropright,dropleft|}\">",
-			"\t<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}\">${3:Text}</button>",
-			"\t<button class=\"btn btn-$2 dropdown-toggle dropdown-toggle-split\" data-toggle=\"dropdown\"></button>",
-			"\t<div class=\"dropdown-menu\">",
-			"\t\t<a class=\"dropdown-item active\" href=\"#\">${4:Text}</a>$0",
+			"<div class=\"btn-group ${2|dropdown,dropup,dropright,dropleft|}\">",
+			"\t<button class=\"btn btn-${3|primary,secondary,success,danger,warning,info,light,dark,link|}\">${4:Text}</button>",
+			"\t<button id=\"${1:my-dropdown}\" class=\"btn btn-$3 dropdown-toggle dropdown-toggle-split\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">",
+			"\t\t<span class=\"sr-only\">Toggle dropdown</span>",
+			"\t</button>",
+			"\t<div class=\"dropdown-menu\" aria-labelledby=\"$1\">",
+			"\t\t<a class=\"dropdown-item active\" href=\"#\">${5:Text}</a>$0",
 			"\t</div>",
 			"</div>"
 		]
@@ -323,10 +346,10 @@
 	"b-dropdown": {
 		"prefix": "b-dropdown",
 		"body": [
-			"<div class=\"${1|dropdown,dropup,dropright,dropleft|}\">",
-			"\t<button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|} dropdown-toggle\" data-toggle=\"dropdown\">${3:Text}</button>",
-			"\t<div class=\"dropdown-menu\">",
-			"\t\t<a class=\"dropdown-item active\" href=\"#\">${4:Text}</a>$0",
+			"<div class=\"${2|dropdown,dropup,dropright,dropleft|}\">",
+			"\t<button id=\"${1:my-dropdown}\" class=\"btn btn-${3|primary,secondary,success,danger,warning,info,light,dark,link|} dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">${4:Text}</button>",
+			"\t<div class=\"dropdown-menu\" aria-labelledby=\"$1\">",
+			"\t\t<a class=\"dropdown-item active\" href=\"#\">${5:Text}</a>$0",
 			"\t</div>",
 			"</div>"
 		]
@@ -451,7 +474,7 @@
 	"b-form-invalid": {
 		"prefix": "b-form-invalid",
 		"body": [
-			"<div class=\"invalid-${1|feedback,tooltip|\">${2:Content}</div>"
+			"<div class=\"invalid-${1|feedback,tooltip|}\">${2:Content}</div>"
 		]
 	},
 	"b-form-range": {
@@ -524,9 +547,9 @@
 		"prefix": "b-input-group-append",
 		"body": [
 			"<div class=\"input-group\">",
-			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
+			"\t<input class=\"form-control\" type=\"${2|text,number,email,password|}\" placeholder=\"${3:Recipient's $2}\" aria-label=\"$3\" aria-describedby=\"${1:my-addon}\">",
 			"\t<div class=\"input-group-append\">",
-			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
+			"\t\t<span class=\"input-group-text\" id=\"$1\">${4:Text}</span>",
 			"\t</div>",
 			"</div>"
 		]
@@ -536,11 +559,11 @@
 		"body": [
 			"<div class=\"input-group\">",
 			"\t<div class=\"input-group-prepend\">",
-			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
-			"\t</div>",
-			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
-			"\t<div class=\"input-group-append\">",
 			"\t\t<span class=\"input-group-text\">${3:Text}</span>",
+			"\t</div>",
+			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\" placeholder=\"${2:Recipient's $1}\" aria-label=\"$2\">",
+			"\t<div class=\"input-group-append\">",
+			"\t\t<span class=\"input-group-text\">${4:Text}</span>",
 			"\t</div>",
 			"</div>"
 		]
@@ -550,9 +573,9 @@
 		"body": [
 			"<div class=\"input-group\">",
 			"\t<div class=\"input-group-prepend\">",
-			"\t\t<span class=\"input-group-text\">${2:Text}</span>",
+			"\t\t<span class=\"input-group-text\" id=\"${1:my-addon}\">${4:Text}</span>",
 			"\t</div>",
-			"\t<input class=\"form-control\" type=\"${1|text,number,email,password|}\">",
+			"\t<input class=\"form-control\" type=\"${2|text,number,email,password|}\" placeholder=\"${3:Recipient's $1}\" aria-label=\"$3\" aria-describedby=\"$1\">",
 			"</div>"
 		]
 	},
@@ -582,7 +605,8 @@
 		"prefix": "b-list-group-action-flush",
 		"body": [
 			"<ul class=\"list-group list-group-flush\">",
-			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>$0",
+			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>",
+			"\t<a class=\"list-group-item list-group-item-action disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Disabled item}</a>$0",
 			"</ul>"
 		]
 	},
@@ -590,7 +614,8 @@
 		"prefix": "b-list-group-action",
 		"body": [
 			"<ul class=\"list-group\">",
-			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>$0",
+			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>",
+			"\t<a class=\"list-group-item list-group-item-action disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Disabled item}</a>$0",
 			"</ul>"
 		]
 	},
@@ -598,7 +623,8 @@
 		"prefix": "b-list-group-flush",
 		"body": [
 			"<ul class=\"list-group list-group-flush\">",
-			"\t<li class=\"list-group-item active\">${1:Text}</li>$0",
+			"\t<li class=\"list-group-item active\">${1:Text}</li>",
+			"\t<li class=\"list-group-item disabled\" aria-disabled=\"true\">${2:Disabled item}</li>$0",
 			"</ul>"
 		]
 	},
@@ -606,7 +632,8 @@
 		"prefix": "b-list-group",
 		"body": [
 			"<ul class=\"list-group\">",
-			"\t<li class=\"list-group-item active\">${1:Text}</li>$0",
+			"\t<li class=\"list-group-item active\">${1:Text}</li>",
+			"\t<li class=\"list-group-item disabled\" aria-disabled=\"true\">${2:Disabled item}</li>$0",
 			"</ul>"
 		]
 	},
@@ -614,10 +641,10 @@
 		"prefix": "b-media-left",
 		"body": [
 			"<div class=\"media\">",
-			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$4\">",
+			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$2\" alt=\"$3\">",
 			"\t<div class=\"media-body\">",
-			"\t\t<h5 class=\"mb-0\">${2:Header}</h5>",
-			"\t\t${3:Content}",
+			"\t\t<h5 class=\"mb-0\">${4:Header}</h5>",
+			"\t\t${5:Content}",
 			"\t</div>",
 			"</div>"
 		]
@@ -630,15 +657,15 @@
 			"\t\t<h5 class=\"mb-0\">${2:Header}</h5>",
 			"\t\t${3:Content}",
 			"\t</div>",
-			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$4\">",
+			"\t<img class=\"align-self-${1|start,center,end|}\" src=\"$4\" alt=\"$5\">",
 			"</div>"
 		]
 	},
 	"b-modal-center": {
 		"prefix": "b-modal-center",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
 			"\t\t\t\t<p>${1:Content}</p>$0",
@@ -651,8 +678,8 @@
 	"b-modal-footer-center": {
 		"prefix": "b-modal-footer-center",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
 			"\t\t\t\t<p>${1:Content}</p>$0",
@@ -668,8 +695,8 @@
 	"b-modal-footer": {
 		"prefix": "b-modal-footer",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
 			"\t\t\t\t<p>${1:Content}</p>$0",
@@ -685,20 +712,20 @@
 	"b-modal-full-center": {
 		"prefix": "b-modal-full-center",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
-			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
-			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
-			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t<h5 class=\"modal-title\" id=\"$1\">${2:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"\t\t\t\t\t<span aria-hidden=\"true\">&times;</span>",
 			"\t\t\t\t</button>",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-body\">",
-			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t\t<p>${3:Content}</p>$0",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-footer\">",
-			"\t\t\t\t${3:Footer}",
+			"\t\t\t\t${4:Footer}",
 			"\t\t\t</div>",
 			"\t\t</div>",
 			"\t</div>",
@@ -708,20 +735,20 @@
 	"b-modal-full": {
 		"prefix": "b-modal-full",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
-			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
-			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
-			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t<h5 class=\"modal-title\" id=\"$1\">${2:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"\t\t\t\t\t<span aria-hidden=\"true\">&times;</span>",
 			"\t\t\t\t</button>",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-body\">",
-			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t\t<p>${3:Content}</p>$0",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-footer\">",
-			"\t\t\t\t${3:Footer}",
+			"\t\t\t\t${4:Footer}",
 			"\t\t\t</div>",
 			"\t\t</div>",
 			"\t</div>",
@@ -731,17 +758,17 @@
 	"b-modal-header-center": {
 		"prefix": "b-modal-header-center",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog modal-dialog-centered\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
-			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
-			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
-			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t<h5 class=\"modal-title\" id=\"$1\">${2:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"\t\t\t\t\t<span aria-hidden=\"true\">&times;</span>",
 			"\t\t\t\t</button>",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-body\">",
-			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t\t<p>${3:Content}</p>$0",
 			"\t\t\t</div>",
 			"\t\t</div>",
 			"\t</div>",
@@ -751,17 +778,17 @@
 	"b-modal-header": {
 		"prefix": "b-modal-header",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
-			"\t\t\t\t<h5 class=\"modal-title\">${1:Title}</h5>",
-			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\">",
-			"\t\t\t\t\t<span>&times;</span>",
+			"\t\t\t\t<h5 class=\"modal-title\" id=\"$1\">${2:Title}</h5>",
+			"\t\t\t\t<button class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"\t\t\t\t\t<span aria-hidden=\"true\">&times;</span>",
 			"\t\t\t\t</button>",
 			"\t\t\t</div>",
 			"\t\t\t<div class=\"modal-body\">",
-			"\t\t\t\t<p>${2:Content}</p>$0",
+			"\t\t\t\t<p>${3:Content}</p>$0",
 			"\t\t\t</div>",
 			"\t\t</div>",
 			"\t</div>",
@@ -771,8 +798,8 @@
 	"b-modal": {
 		"prefix": "b-modal",
 		"body": [
-			"<div class=\"modal fade\">",
-			"\t<div class=\"modal-dialog\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
 			"\t\t\t\t<p>${1:Content}</p>$0",
@@ -786,14 +813,17 @@
 		"prefix": "b-navbar",
 		"body": [
 			"<nav class=\"navbar navbar-expand-lg navbar-${1|light,dark|} bg-$1 ${2|fixed-top,fixed-bottom,sticky-top|}\">",
-			"\t<a class=\"navbar-brand\">${4:Brand}</a>",
-			"\t<button class=\"navbar-toggler\" data-target=\"#${3:my-nav}\" data-toggle=\"collapse\">",
+			"\t<a class=\"navbar-brand\">${5:Brand}</a>",
+			"\t<button class=\"navbar-toggler\" data-target=\"#${3:my-nav}\" data-toggle=\"collapse\" aria-controls=\"$3\" aria-expanded=\"false\" aria-label=\"${4:Toggle navigation}\">",
 			"\t\t<span class=\"navbar-toggler-icon\"></span>",
 			"\t</button>",
 			"\t<div id=\"$3\" class=\"collapse navbar-collapse\">",
 			"\t\t<ul class=\"navbar-nav mr-auto\">",
 			"\t\t\t<li class=\"nav-item active\">",
-			"\t\t\t\t<a class=\"nav-link\" href=\"#\">${5:Text}</a>",
+			"\t\t\t\t<a class=\"nav-link\" href=\"#\">${6:Item 1} <span class=\"sr-only\">(current)</span></a>",
+			"\t\t\t</li>",
+			"\t\t\t<li class=\"nav-item\">",
+			"\t\t\t\t<a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${7:Item 2}</a>",
 			"\t\t\t</li>$0",
 			"\t\t</ul>",
 			"\t</div>",
@@ -805,7 +835,10 @@
 		"body": [
 			"<nav class=\"nav nav-fill\">",
 			"\t<li class=\"nav-item\">",
-			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Item 1}</a>",
+			"\t</li>",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Item 2}</a>",
 			"\t</li>$0",
 			"</nav>"
 		]
@@ -815,7 +848,10 @@
 		"body": [
 			"<nav class=\"nav flex-column\">",
 			"\t<li class=\"nav-item\">",
-			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Item 1}</a>",
+			"\t</li>",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Item 2}</a>",
 			"\t</li>$0",
 			"</nav>"
 		]
@@ -825,7 +861,10 @@
 		"body": [
 			"<nav class=\"nav\">",
 			"\t<li class=\"nav-item\">",
-			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Text}</a>",
+			"\t\t<a class=\"nav-link active\" href=\"#\">${1:Item 1}</a>",
+			"\t</li>",
+			"\t<li class=\"nav-item\">",
+			"\t\t<a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Item 2}</a>",
 			"\t</li>$0",
 			"</nav>"
 		]
@@ -833,10 +872,16 @@
 	"b-pagination": {
 		"prefix": "b-pagination",
 		"body": [
-			"<nav>",
+			"<nav aria-label=\"${1:Page navigation}\">",
 			"\t<ul class=\"pagination\">",
+			"\t\t<li class=\"page-item active\" aria-current=\"page\">",
+			"\t\t\t<a class=\"page-link\" href=\"#\">${2:Page 1} <span class=\"sr-only\">(current)</span></a>",
+			"\t\t</li>",
+			"\t\t<li class=\"page-item disabled\">",
+			"\t\t\t<a class=\"page-link\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${3:Page 2}</a>",
+			"\t\t</li>",
 			"\t\t<li class=\"page-item\">",
-			"\t\t\t<a class=\"page-link\" href=\"#\">${1:Page 1}</a>",
+			"\t\t\t<a class=\"page-link\" href=\"#\">${4:Page 3}</a>",
 			"\t\t</li>$0",
 			"\t</ul>",
 			"</nav>"
@@ -845,20 +890,20 @@
 	"b-popover-title": {
 		"prefix": "b-popover-title",
 		"body": [
-			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" title=\"${5:Title}\" data-content=\"${6:Content}\">${4:Text}</button>"
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" title=\"${4:Title}\" data-content=\"${5:Content}\">${6:Text}</button>"
 		]
 	},
 	"b-popover": {
 		"prefix": "b-popover",
 		"body": [
-			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" data-content=\"${5:Content}\">${4:Text}</button>"
+			"<button class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark,link|}\" type=\"${2|button,submit,reset|}\" data-toggle=\"popover\" data-placement=\"${3|top,bottom,right,left|}\" data-trigger=\"focus\" data-content=\"${4:Content}\">${5:Text}</button>"
 		]
 	},
 	"b-progress-striped": {
 		"prefix": "b-progress-striped",
 		"body": [
 			"<div class=\"progress\">",
-			"\t<div class=\"progress-bar progress-bar-striped bg-primary\" style=\"width: ${1:25}%\">${2:Text}</div>",
+			"\t<div class=\"progress-bar progress-bar-striped bg-primary\" style=\"width: ${1:25}%\" role=\"progressbar\" aria-valuenow=\"$1\" aria-valuemin=\"0\" aria-valuemax=\"100\">${2:Text}</div>",
 			"</div>"
 		]
 	},
@@ -866,32 +911,36 @@
 		"prefix": "b-progress",
 		"body": [
 			"<div class=\"progress\">",
-			"\t<div class=\"progress-bar bg-primary\" style=\"width: ${1:25}%\">${2:Text}</div>",
+			"\t<div class=\"progress-bar bg-primary\" style=\"width: ${1:25}%\" role=\"progressbar\" aria-valuenow=\"$1\" aria-valuemin=\"0\" aria-valuemax=\"100\">${2:Text}</div>",
 			"</div>"
 		]
 	},
 	"b-spinner-growing": {
 		"prefix": "b-spinner-growing",
 		"body": [
-			"<div class=\"spinner-grow text-${1|primary,secondary,success,danger,warning,info,light,dark|}\"></div>"
+			"<div class=\"spinner-grow text-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"status\">",
+			"\t<span class=\"sr-only\">${2:Loading...}</span>",
+			"</div>"
 		]
 	},
 	"b-spinner": {
 		"prefix": "b-spinner",
 		"body": [
-			"<div class=\"spinner-border text-${1|primary,secondary,success,danger,warning,info,light,dark|}\"></div>"
+			"<div class=\"spinner-border text-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"status\">",
+			"\t<span class=\"sr-only\">${2:Loading...}</span>",
+			"</div>"
 		]
 	},
 	"b-toast": {
 		"prefix": "b-toast",
 		"body": [
-			"<div class=\"toast\">",
+			"<div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
 			"\t<div class=\"toast-header\">",
-			"\t\t<img src=\"$1\" class=\"rounded mr-2\">",
-			"\t\t<strong class=\"mr-auto\">${2:Title}</strong>",
-			"\t\t<small>${3:Note}</small>",
-			"\t\t<button type=\"button\" class=\"ml-2 mb-1 close\" data-dismiss=\"toast\">",
-			"\t\t\t<span>&times;</span>",
+			"\t\t<img class=\"rounded mr-2\" src=\"$1\" alt=\"${2:Toast icon alternate text}\">",
+			"\t\t<strong class=\"mr-auto\">${3:Title}</strong>",
+			"\t\t<small>${4:Note}</small>",
+			"\t\t<button type=\"button\" class=\"ml-2 mb-1 close\" data-dismiss=\"toast\" aria-label=\"Close\">",
+			"\t\t\t<span aria-hidden=\"true\">&times;</span>",
 			"\t\t</button>",
 			"\t</div>",
 			"\t<div class=\"toast-body\">",
@@ -904,7 +953,7 @@
 		"prefix": "b-figure",
 		"body": [
 			"<figure class=\"figure\">",
-			"\t<img class=\"figure-img img-fluid\" src=\"$2\">",
+			"\t<img class=\"figure-img img-fluid\" src=\"$2\" alt=\"$3\">",
 			"\t<figcaption class=\"figure-caption\">${1:Content}</figcaption>",
 			"</figure>"
 		]
@@ -912,13 +961,13 @@
 	"b-img-fluid": {
 		"prefix": "b-img-fluid",
 		"body": [
-			"<img class=\"img-fluid\" src=\"$1\">"
+			"<img class=\"img-fluid\" src=\"$1\" alt=\"$2\">"
 		]
 	},
 	"b-img-thumbnail": {
 		"prefix": "b-img-thumbnail",
 		"body": [
-			"<img class=\"img-thumbnail\" src=\"$1\">"
+			"<img class=\"img-thumbnail\" src=\"$1\" alt=\"$2\">"
 		]
 	},
 	"b-col": {

@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [0.2] - 2019-02-04
+- Added laravel blade support
+- Added support for assistive technologies (Thanks to @JLammeer)
+- Fixed *b-form-invalid*
+
 ## [0.1.7] - 2018-12-22
 - Fixed README.md not displaying in Visual Studio Code
 

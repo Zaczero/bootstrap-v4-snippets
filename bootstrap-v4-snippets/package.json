@@ -2,7 +2,7 @@
     "name": "bootstrap-v4-snippets",
     "displayName": "Bootstrap v4 Snippets",
     "description": "Bootstrap v4 Snippets for VS Code",
-    "version": "0.1.7",
+    "version": "0.2.0",
     "publisher": "Zaczero",
 	"icon": "images/icon.png",
     "engines": {
@@ -19,6 +19,10 @@
             },
             {
                 "language": "razor",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "blade",
                 "path": "./snippets/snippets.json"
             }
         ]
