@@ -1,6 +1,6 @@
 <div class="input-group">
     <div class="input-group-prepend">
-        <span class="input-group-text">${2:Text}</span>
+        <span class="input-group-text" id="${3:my-addon-id}">${2:Text}</span>
     </div>
-    <input class="form-control" type="${1|text,number,email,password|}">
+    <input class="form-control" type="${1|text,number,email,password|}" aria-label="Recipient's $1" aria-describedby="$3">
 </div>
