@@ -1,9 +1,9 @@
-<div class="btn-group ${1|dropdown,dropup,dropright,dropleft|}">
-    <button class="btn btn-${2|primary,secondary,success,danger,warning,info,light,dark,link|}">${3:Text}</button>
-    <button class="btn btn-$2 dropdown-toggle dropdown-toggle-split" id="${5:my-dropdown-button-id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
+<div class="btn-group ${2|dropdown,dropup,dropright,dropleft|}">
+    <button class="btn btn-${3|primary,secondary,success,danger,warning,info,light,dark,link|}">${4:Text}</button>
+    <button id="${1:my-dropdown}" class="btn btn-$3 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle dropdown</span>
     </button>
-    <div class="dropdown-menu" aria-labelledby="$5">
-        <a class="dropdown-item active" href="#">${4:Text}</a>$0
+    <div class="dropdown-menu" aria-labelledby="$1">
+        <a class="dropdown-item active" href="#">${5:Text}</a>$0
     </div>
 </div>
