@@ -20,6 +20,10 @@
             {
                 "language": "razor",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "jade",
+                "path": "./snippets/jade-snippets.json"
             }
         ]
     },
