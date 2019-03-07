@@ -1189,5 +1189,39 @@
 			"\t$0",
 			"</div>"
 		]
+	},
+	"b-template:html5": {
+		"prefix": "b-template:html5",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"${1}\">",
+			"\t<head>",
+			"\t\t<meta charset=\"utf-8\">",
+			"\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"\t\t<title>${2:Title Page}</title>",
+			"",
+			"\t\t<!-- Bootstrap CSS -->",
+			"\t\t<link href=\"${3:https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css}\" rel=\"stylesheet\">",
+			"",
+			"\t\t<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->",
+			"\t\t<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->",
+			"\t\t<!--[if lt IE 9]>",
+			"\t\t\t<script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js\"></script>",
+			"\t\t\t<script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>",
+			"\t\t<![endif]-->",
+			"\t</head>",
+			"\t<body>",
+			"\t\t<h1 class=\"text-center\">${6:Hello World}</h1>",
+			"",
+			"\t\t<!-- jQuery -->",
+			"\t\t<script src=\"${4:https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js}\"></script>",
+			"\t\t<!-- Popper -->",
+			"\t\t<script src=\"${6:https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}\"></script>",
+			"\t\t<!-- Bootstrap JavaScript -->",
+			"\t\t<script src=\"${5:https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js}\"></script>",
+			"\t</body>",
+			"</html>"
+		]
 	}
 }
