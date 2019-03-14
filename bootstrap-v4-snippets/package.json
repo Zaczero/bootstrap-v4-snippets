@@ -24,6 +24,10 @@
             {
                 "language": "blade",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "smarty",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
