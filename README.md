@@ -28,7 +28,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 * Email: [kamil.monicz@outlook.com](mailto:kamil.monicz@outlook.com)
 
-## 🧬 Compiling and testing guide
+## 👨🏻‍💻 Compiling and testing guide
 
 All snippets are stored inside the `source` directory.
 To build the snippets execute `build-from-source.bat` file *(you will need to install .NET Core 2.2 or newer)*.
