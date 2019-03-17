@@ -1,7 +1,7 @@
 # Bootstrap v4 Snippets for VS Code
 
-A pack of **108** code snippets for Bootstrap toolkit.  
-Latest supported version: *v4.2.1*
+A pack of **110** code snippets for Bootstrap toolkit.  
+Latest supported version: *v4.3.1*
 
 [Get Bootstrap here](https://getbootstrap.com/)  
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.

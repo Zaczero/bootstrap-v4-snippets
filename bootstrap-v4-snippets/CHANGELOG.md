@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [0.2.1] - 2019-03-17
+- Added vue support
+- Added *b-list-group-horizontal*
+- Added *b-list-group-action-horizontal*
+
 ## [0.2] - 2019-02-04
 - Added laravel blade support
 - Added support for assistive technologies (Thanks to @JLammeer)

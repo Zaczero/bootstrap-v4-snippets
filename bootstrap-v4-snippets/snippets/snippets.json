@@ -610,6 +610,15 @@
 			"</ul>"
 		]
 	},
+	"b-list-group-action-horizontal": {
+		"prefix": "b-list-group-action-horizontal",
+		"body": [
+			"<ul class=\"list-group list-group-horizontal\">",
+			"\t<a class=\"list-group-item list-group-item-action active\" href=\"#\">${1:Text}</a>",
+			"\t<a class=\"list-group-item list-group-item-action disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${2:Disabled item}</a>$0",
+			"</ul>"
+		]
+	},
 	"b-list-group-action": {
 		"prefix": "b-list-group-action",
 		"body": [
@@ -623,6 +632,15 @@
 		"prefix": "b-list-group-flush",
 		"body": [
 			"<ul class=\"list-group list-group-flush\">",
+			"\t<li class=\"list-group-item active\">${1:Text}</li>",
+			"\t<li class=\"list-group-item disabled\" aria-disabled=\"true\">${2:Disabled item}</li>$0",
+			"</ul>"
+		]
+	},
+	"b-list-group-horizontal": {
+		"prefix": "b-list-group-horizontal",
+		"body": [
+			"<ul class=\"list-group list-group-horizontal\">",
 			"\t<li class=\"list-group-item active\">${1:Text}</li>",
 			"\t<li class=\"list-group-item disabled\" aria-disabled=\"true\">${2:Disabled item}</li>$0",
 			"</ul>"
