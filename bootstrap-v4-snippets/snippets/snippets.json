@@ -682,7 +682,7 @@
 	"b-modal-center": {
 		"prefix": "b-modal-center",
 		"body": [
-			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" id=\"${1:exampleModal}\" role=\"dialog\" aria-hidden=\"true\">",
 			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
@@ -730,7 +730,7 @@
 	"b-modal-full-center": {
 		"prefix": "b-modal-full-center",
 		"body": [
-			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" id=\"${1:exampleModal}\" role=\"dialog\" aria-labelledby=\"my-modal-title\" aria-hidden=\"true\">",
 			"\t<div class=\"modal-dialog modal-dialog-centered\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
@@ -750,10 +750,17 @@
 			"</div>"
 		]
 	},
+	"b-modal-trigger-button":{
+		"prefix": "b-modal-trigger-button",
+		"body": ["<button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#${1:exampleModal}\">",
+			"\t<p>${1:button}</p>$0",
+			"</button>",
+			]
+	},
 	"b-modal-full": {
 		"prefix": "b-modal-full",
 		"body": [
-			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"${1:my-modal-title}\" aria-hidden=\"true\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" id=\"${1:exampleModal}\" role=\"dialog\" aria-labelledby=\"my-modal-title\" aria-hidden=\"true\">",
 			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-header\">",
@@ -816,7 +823,7 @@
 	"b-modal": {
 		"prefix": "b-modal",
 		"body": [
-			"<div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">",
+			"<div class=\"modal fade\" tabindex=\"-1\" id=\"${1:exampleModal}\" role=\"dialog\" aria-hidden=\"true\">",
 			"\t<div class=\"modal-dialog\" role=\"document\">",
 			"\t\t<div class=\"modal-content\">",
 			"\t\t\t<div class=\"modal-body\">",
