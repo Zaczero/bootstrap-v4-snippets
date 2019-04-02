@@ -22,7 +22,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 ## 🔗 Links
 
 * [Issues](https://github.com/Zaczero/bootstrap-v4-snippets/issues)
-* [Changelog](https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/CHANGELOG.md)
+* [Changelog](https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/bootstrap-v4-snippets/CHANGELOG.md)
 
 ## 📬 Contact
 
