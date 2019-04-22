@@ -1,5 +1,8 @@
 # Bootstrap v4 Snippets for VS Code
 
+![](https://img.shields.io/github/release/Zaczero/bootstrap-v4-snippets.svg)
+![](https://img.shields.io/github/license/Zaczero/bootstrap-v4-snippets.svg)
+
 A pack of **110** code snippets for Bootstrap toolkit.  
 Latest supported version: *v4.3.1*
 
@@ -26,7 +29,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 ## 📬 Contact
 
-* Email: [kamil.monicz@outlook.com](mailto:kamil.monicz@outlook.com)
+* Email: [kamil.monicz@gmail.com](mailto:kamil.monicz@gmail.com)
 
 ## 👨🏻‍💻 Compiling and testing guide
 
