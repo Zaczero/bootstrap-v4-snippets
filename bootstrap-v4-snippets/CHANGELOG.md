@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [1.0.0] - 2019-05-24
+- First stable release
+- Minor meta changes
+
 ## [0.2.1] - 2019-03-17
 - Added vue support
 - Added *b-list-group-horizontal*

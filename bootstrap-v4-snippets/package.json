@@ -2,7 +2,7 @@
     "name": "bootstrap-v4-snippets",
     "displayName": "Bootstrap v4 Snippets",
     "description": "Bootstrap v4 Snippets for VS Code",
-    "version": "0.2.1",
+    "version": "1.0.0",
     "publisher": "Zaczero",
 	"icon": "images/icon.png",
     "engines": {
@@ -35,10 +35,9 @@
             }
         ]
     },
-    "preview": true,
     "bugs": {
         "url": "https://github.com/Zaczero/bootstrap-v4-snippets/issues",
-        "email": "kamil.monicz@outlook.com"
+        "email": "kamil.monicz@gmail.com"
     },
     "repository": {
         "type": "git",

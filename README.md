@@ -31,6 +31,10 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 * Email: [kamil.monicz@gmail.com](mailto:kamil.monicz@gmail.com)
 
+## ☕ Support me
+
+* Bitcoin: `35n1y9iHePKsVTobs4FJEkbfnBg2NtVbJW`
+
 ## 👨🏻‍💻 Compiling and testing guide
 
 All snippets are stored inside the `source` directory.
