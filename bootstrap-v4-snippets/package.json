@@ -35,6 +35,7 @@
             }
         ]
     },
+    "preview": true,
     "bugs": {
         "url": "https://github.com/Zaczero/bootstrap-v4-snippets/issues",
         "email": "kamil.monicz@outlook.com"
