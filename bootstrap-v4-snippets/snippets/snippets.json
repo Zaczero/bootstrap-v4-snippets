@@ -358,8 +358,8 @@
 		"prefix": "b-form-check-inline",
 		"body": [
 			"<div class=\"form-check form-check-inline\">",
-			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\">",
-			"\t<label for=\"$1\" class=\"form-check-label\">${3:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\" name=\"$3\" value=\"${4:true}\">",
+			"\t<label for=\"$1\" class=\"form-check-label\">${5:Text}</label>",
 			"</div>"
 		]
 	},
@@ -367,8 +367,8 @@
 		"prefix": "b-form-check",
 		"body": [
 			"<div class=\"form-check\">",
-			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\">",
-			"\t<label for=\"$1\" class=\"form-check-label\">${3:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"form-check-input\" type=\"${2|checkbox,radio|}\" name=\"$3\" value=\"${4:true}\">",
+			"\t<label for=\"$1\" class=\"form-check-label\">${5:Text}</label>",
 			"</div>"
 		]
 	},
@@ -376,8 +376,8 @@
 		"prefix": "b-form-custom-check-inline",
 		"body": [
 			"<div class=\"custom-control custom-${2|checkbox,radio|} custom-control-inline\">",
-			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
-			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\" name=\"$3\" value=\"${4:true}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${5:Text}</label>",
 			"</div>"
 		]
 	},
@@ -385,8 +385,8 @@
 		"prefix": "b-form-custom-check",
 		"body": [
 			"<div class=\"custom-control custom-${2|checkbox,radio|}\">",
-			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\">",
-			"\t<label for=\"$1\" class=\"custom-control-label\">${3:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"${2|checkbox,radio|}\" name=\"$3\" value=\"${4:true}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${5:Text}</label>",
 			"</div>"
 		]
 	},
@@ -394,8 +394,8 @@
 		"prefix": "b-form-custom-file",
 		"body": [
 			"<div class=\"custom-file\">",
-			"\t<input id=\"${1:my-input}\" class=\"custom-file-input\" type=\"file\">",
-			"\t<label for=\"$1\" class=\"custom-file-label\">${2:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"custom-file-input\" type=\"file\" name=\"$2\">",
+			"\t<label for=\"$1\" class=\"custom-file-label\">${3:Text}</label>",
 			"</div>"
 		]
 	},
@@ -403,8 +403,8 @@
 		"prefix": "b-form-custom-range",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
-			"\t<input id=\"$1\" class=\"custom-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
+			"\t<label for=\"${1:my-input}\">${5:Text}</label>",
+			"\t<input id=\"$1\" class=\"custom-range\" type=\"range\" name=\"$2\" min=\"${3:0}\" max=\"${4:100}\">",
 			"</div>"
 		]
 	},
@@ -412,9 +412,9 @@
 		"prefix": "b-form-custom-select-multiple",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
-			"\t<select id=\"$1\" class=\"custom-select\" multiple>",
-			"\t\t<option>${3:Text}</option>$0",
+			"\t<label for=\"${1:my-select}\">${3:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\" name=\"$2\" multiple>",
+			"\t\t<option>${4:Text}</option>$0",
 			"\t</select>",
 			"</div>"
 		]
@@ -423,9 +423,9 @@
 		"prefix": "b-form-custom-select",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
-			"\t<select id=\"$1\" class=\"custom-select\">",
-			"\t\t<option>${3:Text}</option>$0",
+			"\t<label for=\"${1:my-select}\">${3:Text}</label>",
+			"\t<select id=\"$1\" class=\"custom-select\" name=\"$2\">",
+			"\t\t<option>${4:Text}</option>$0",
 			"\t</select>",
 			"</div>"
 		]
@@ -434,17 +434,33 @@
 		"prefix": "b-form-custom-switch",
 		"body": [
 			"<div class=\"custom-control custom-switch\">",
-			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"checkbox\">",
-			"\t<label for=\"$1\" class=\"custom-control-label\">${2:Text}</label>",
+			"\t<input id=\"${1:my-input}\" class=\"custom-control-input\" type=\"checkbox\" name=\"$2\" value=\"${3:true}\">",
+			"\t<label for=\"$1\" class=\"custom-control-label\">${4:Text}</label>",
 			"</div>"
+		]
+	},
+	"b-form-enctype-inline": {
+		"prefix": "b-form-enctype-inline",
+		"body": [
+			"<form class=\"form-inline\" method=\"${1|get,post|}\" action=\"$2\" enctype=\"${3|multipart/form-data,application/x-www-form-urlencoded,text/plain|}\">",
+			"\t$0",
+			"</form>"
+		]
+	},
+	"b-form-enctype": {
+		"prefix": "b-form-enctype",
+		"body": [
+			"<form method=\"${1|get,post|}\" action=\"$2\" enctype=\"${3|multipart/form-data,application/x-www-form-urlencoded,text/plain|}\">",
+			"\t$0",
+			"</form>"
 		]
 	},
 	"b-form-file": {
 		"prefix": "b-form-file",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
-			"\t<input id=\"$1\" class=\"form-control-file\" type=\"file\">",
+			"\t<label for=\"${1:my-input}\">${3:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control-file\" type=\"file\" name=\"$2\">",
 			"</div>"
 		]
 	},
@@ -452,8 +468,8 @@
 		"prefix": "b-form-group",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${3:Text}</label>",
-			"\t<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\">",
+			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\" name=\"$3\">",
 			"</div>"
 		]
 	},
@@ -481,8 +497,8 @@
 		"prefix": "b-form-range",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${4:Text}</label>",
-			"\t<input id=\"$1\" class=\"form-control-range\" type=\"range\" min=\"${2:0}\" max=\"${3:100}\">",
+			"\t<label for=\"${1:my-input}\">${5:Text}</label>",
+			"\t<input id=\"$1\" class=\"form-control-range\" type=\"range\" name=\"$2\" min=\"${3:0}\" max=\"${4:100}\">",
 			"</div>"
 		]
 	},
@@ -490,9 +506,9 @@
 		"prefix": "b-form-select-multiple",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
-			"\t<select id=\"$1\" class=\"form-control\" multiple>",
-			"\t\t<option>${3:Text}</option>$0",
+			"\t<label for=\"${1:my-select}\">${3:Text}</label>",
+			"\t<select id=\"$1\" class=\"form-control\" name=\"$2\" multiple>",
+			"\t\t<option>${4:Text}</option>$0",
 			"\t</select>",
 			"</div>"
 		]
@@ -501,9 +517,9 @@
 		"prefix": "b-form-select",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${2:Text}</label>",
-			"\t<select id=\"$1\" class=\"form-control\">",
-			"\t\t<option>${3:Text}</option>$0",
+			"\t<label for=\"${1:my-select}\">${3:Text}</label>",
+			"\t<select id=\"$1\" class=\"form-control\" name=\"$2\">",
+			"\t\t<option>${4:Text}</option>$0",
 			"\t</select>",
 			"</div>"
 		]
@@ -512,8 +528,8 @@
 		"prefix": "b-form-textarea",
 		"body": [
 			"<div class=\"form-group\">",
-			"\t<label for=\"${1:my-input}\">${3:Text}</label>",
-			"\t<textarea id=\"$1\" class=\"form-control\" rows=\"${2:3}\"></textarea>",
+			"\t<label for=\"${1:my-textarea}\">${4:Text}</label>",
+			"\t<textarea id=\"$1\" class=\"form-control\" name=\"$2\" rows=\"${3:3}\"></textarea>",
 			"</div>"
 		]
 	},
@@ -531,16 +547,28 @@
 			"</form>"
 		]
 	},
+	"b-input-hidden-id": {
+		"prefix": "b-input-hidden-id",
+		"body": [
+			"<input id=\"${1:my-input}\" type=\"hidden\" name=\"$2\" value=\"$3\">"
+		]
+	},
 	"b-input-hidden": {
 		"prefix": "b-input-hidden",
 		"body": [
-			"<input id=\"$1\" type=\"hidden\" value=\"$2\">"
+			"<input type=\"hidden\" name=\"$1\" value=\"$2\">"
+		]
+	},
+	"b-input-id": {
+		"prefix": "b-input-id",
+		"body": [
+			"<input id=\"${1:my-input}\" class=\"form-control\" type=\"${2|text,number,email,password|}\" name=\"$3\">"
 		]
 	},
 	"b-input": {
 		"prefix": "b-input",
 		"body": [
-			"<input id=\"$1\" class=\"form-control\" type=\"${2|text,number,email,password|}\">"
+			"<input class=\"form-control\" type=\"${1|text,number,email,password|}\" name=\"$2\">"
 		]
 	},
 	"b-input-group-append": {
