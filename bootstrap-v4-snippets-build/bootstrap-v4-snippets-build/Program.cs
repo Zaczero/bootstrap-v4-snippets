@@ -46,6 +46,7 @@ namespace bootstrap_v4_snippets_build
 
                     var snippetLine = snippetLines[j]
                         .Replace("    ", "\\t")
+                        .Replace("\t", "\\t")
                         .Replace("\"", "\\\"");
 
                     writeStream.WriteLine($"\t\t\t\"{snippetLine}\"{snippetLineSuffix}");
