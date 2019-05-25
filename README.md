@@ -9,6 +9,8 @@ Latest supported version: *v4.3.1*
 [Get Bootstrap here](https://getbootstrap.com/)  
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
 
+[Extension in Marketplace](https://marketplace.visualstudio.com/items?itemName=Zaczero.bootstrap-v4-snippets)
+
 ## 🏁 Getting started
 
 To start using the snippets simply type **b-** *snippet_name*.
