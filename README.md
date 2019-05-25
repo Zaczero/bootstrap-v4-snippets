@@ -3,11 +3,15 @@
 ![](https://img.shields.io/github/release/Zaczero/bootstrap-v4-snippets.svg)
 ![](https://img.shields.io/github/license/Zaczero/bootstrap-v4-snippets.svg)
 
-A pack of **110** code snippets for Bootstrap toolkit.  
+A pack of **115** code snippets for Bootstrap toolkit.  
 Latest supported version: *v4.3.1*
 
 [Get Bootstrap here](https://getbootstrap.com/)  
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+
+## 🔗 Download
+
+* [Visual Studio | Marketplace](https://marketplace.visualstudio.com/items?itemName=Zaczero.bootstrap-v4-snippets)
 
 ## 🏁 Getting started
 
@@ -22,7 +26,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 ![preview1.gif](https://i.imgur.com/gbRrW2r.gif)
 
-## 🔗 Links
+## ⚓ Links
 
 * [Issues](https://github.com/Zaczero/bootstrap-v4-snippets/issues)
 * [Changelog](https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/bootstrap-v4-snippets/CHANGELOG.md)

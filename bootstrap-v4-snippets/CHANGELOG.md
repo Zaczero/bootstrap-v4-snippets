@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [1.1.0] - 2019-05-26
+- Added *b-modal-toggle*
+- Added *b-form-enctype*
+- Added *b-form-enctype-inline*
+- Added *b-input-id*
+- Added *b-input-hidden-id*
+- Added id attribute to modals
+- Added name attribute to forms
+- Removed id attribute from *b-input* and *b-input-hidden*
+
 ## [1.0.0] - 2019-05-24
 - First stable release
 - Minor meta changes
