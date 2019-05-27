@@ -2,15 +2,17 @@
     "name": "bootstrap-v4-snippets",
     "displayName": "Bootstrap v4 Snippets",
     "description": "Bootstrap v4 Snippets for VS Code",
+    "icon": "images/icon.png",
     "version": "1.1.0",
     "publisher": "Zaczero",
-	"icon": "images/icon.png",
     "engines": {
         "vscode": "^1.10.0"
     },
-    "categories": [
-        "Snippets"
-    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zaczero/bootstrap-v4-snippets.git"
+    },
+    "categories": ["Snippets"],
     "contributes": {
         "snippets": [
             {
@@ -39,9 +41,5 @@
         "url": "https://github.com/Zaczero/bootstrap-v4-snippets/issues",
         "email": "kamil.monicz@gmail.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Zaczero/bootstrap-v4-snippets.git"
-    },
-    "homepage": "https://github.com/Zaczero/bootstrap-v4-snippets/blob/master/README.md"
+    "homepage": "https://github.com/Zaczero/bootstrap-v4-snippets"
 }
