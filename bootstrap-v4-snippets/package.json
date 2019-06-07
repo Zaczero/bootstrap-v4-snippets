@@ -34,6 +34,10 @@
             {
                 "language": "smarty",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "cfml",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
