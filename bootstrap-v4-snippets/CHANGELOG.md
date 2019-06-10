@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [1.1.1] - 2019-06-10
+- Added *.cfm (coldfusion)* support (Thanks to Magar)
+- Minor meta changes (Thanks to @realpack)
+
 ## [1.1.0] - 2019-05-26
 - Added *b-modal-toggle*
 - Added *b-form-enctype*
