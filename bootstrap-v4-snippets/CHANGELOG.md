@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the "bootstrap-v4-snippets" extension will be documented in this file.
 
+## [1.1.2] - 2019-08-05
+- Fixed missing name attribute in *b-input-group*
+
 ## [1.1.1] - 2019-06-10
 - Added *.cfm (coldfusion)* support (Thanks to Magar)
 - Minor meta changes (Thanks to @realpack)

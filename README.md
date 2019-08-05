@@ -33,7 +33,7 @@ To start using the snippets simply type **b-** *snippet_name*.
 
 ## 📬 Contact
 
-* Email: [kamil.monicz@gmail.com](mailto:kamil.monicz@gmail.com)
+* Email: [kamil@monicz.pl](mailto:kamil@monicz.pl)
 
 ## ☕ Support me
 
