@@ -1,7 +1,7 @@
 # Bootstrap v4 Snippets for VS Code
 
-![](https://img.shields.io/github/release/Zaczero/bootstrap-v4-snippets.svg)
-![](https://img.shields.io/github/license/Zaczero/bootstrap-v4-snippets.svg)
+![release badge](https://img.shields.io/github/release/Zaczero/bootstrap-v4-snippets.svg)
+![license badge](https://img.shields.io/github/license/Zaczero/bootstrap-v4-snippets.svg)
 
 A pack of **115** code snippets for Bootstrap toolkit.  
 Latest supported version: *v4.3.1*
@@ -44,4 +44,4 @@ To start using the snippets simply type **b-** *snippet_name*.
 All snippets are stored inside the `source` directory.
 To build the snippets execute `build-from-source.bat` file *(you will need to install .NET Core 2.2 or newer)*.
 Compiled snippets can be found in `bootstrap-v4-snippets/snippets/snippets.json`.
-To test the changes copy the file content and paste it inside `VS Code > F1 > Preferences: Configure User Snippets > html.json`. 🎉
+To test the changes copy the file content and paste it inside `VS Code > F1 > Preferences: Configure User Snippets > html.json` 🎉
